@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ToDo App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Todo List</h1>
+            <div class="todo-form">
+                <div class="form-row">
+                    <input type="text" id="search-query"
+                        placeholder="Search todos">
+                    <button id="search-btn">Search</button>
+                </div>
+                <input type="hidden" id="todo-id">
+                <input type="text" id="todo-title" placeholder="Title">
+                <textarea id="todo-description"
+                    placeholder="Description"></textarea>
+                <select id="todo-status">
+                    <option value="progress">In Progress</option>
+                    <option value="pending">Pending</option>
+                    <option value="completed">Completed</option>
+                </select>
+                <div class="form-row">
+                    <button id="update-todo-btn">Update ToDo</button>
+                    <button id="add-todo-btn">Add ToDo</button>
+                </div>
+            </div>
+            <ul id="todo-list"></ul>
+            <div id="refresh-logout-row">
+                <button id="get-data-btn">Get All Todo</button>
+                <button id="logout-btn">Logout</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
